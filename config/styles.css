@@ -1,0 +1,305 @@
+body {
+    font-family: 'Montserrat', monospace;
+    background-image: url('../images/StarryNight.jpg');
+    background-size: cover; /* Cover ensures the image covers the whole body */
+    background-position: center; /* Centers the image in the page */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed; /* Keeps the background image fixed during scrolling */
+    position: relative; /* Needed to position the pseudo-element absolutely relative to the body */
+    height: 100vh; /* Optional: Adjust depending on your design needs */
+    margin: 0; /* Removes default margin */
+    
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background: rgba(0, 0, 0, 0.82); /* Black overlay with 50% opacity */
+    z-index: -1; /* Ensures the overlay is behind the content but above the background */
+}
+
+h1, h2, p {
+    color: #F2C464; /* Ensures text is white */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* Adds a dark shadow for better visibility */
+}
+
+h3 {
+    color: #F2C464; /* Ensures text is white */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* Adds a dark shadow for better visibility */
+    text-align: center;
+    font-size: 25px;
+}
+
+
+header, nav, section, footer {
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center; /* Center aligns the text of the list items */
+    margin: 0; /* Removes default margin to align properly */
+}
+
+nav ul li {
+    display: inline-block; /* Allows applying padding and maintaining linearity */
+    margin: 10px; /* Adds space around each button */
+    background-color: #403F6F; /* Example blue background, change as needed */
+    border-radius: 20px; /* Rounds the corners */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+nav ul li a {
+    display: block; /* Makes the link fill the li element */
+    padding: 10px 20px; /* Top and bottom padding, left and right padding */
+    text-decoration: none; /* Removes underline from links */
+    color: #F2C464; /* Sets text color */
+    font-weight: bold; /* Makes the text bold */
+}
+
+nav ul li:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+a {   /* Links */
+    color: #F2C464; /* Sets the link color to blue */
+    text-decoration: underline; /* Removes underline */
+}
+a:hover {
+    text-decoration: underline; /* Adds underline on hover */
+}
+
+/* Bullet Points */
+
+ul {
+    list-style-type: disc; /* Default disc style */
+    padding-left: 20px; /* Proper indentation */
+}
+
+ul li {
+    margin-bottom: 10px; /* Space between list items */
+    color: #F2C464;
+}
+
+
+/* About Me Section */
+#aboutme {
+    text-align: left;
+    padding: 15px;
+    color: #fff; /* Ensure text is visible on the background */
+}
+
+#aboutme h2 {
+    margin-left: 20px; /* Adjust spacing to the left edge */
+}
+
+.content-wrapper {
+    display: flex;
+    justify-content: center; /* Aligns children (text and image) on opposite ends */
+    align-items: center; /* Centers items vertically */
+}
+
+.profile-section {
+    flex: 1; /* Takes up only the necessary space, allowing the image to sit at the edge */
+    /*margin-right: 5px; /* Adds some space between the text and the image */
+    padding-right: 0;
+}
+
+.profile-image {
+    width: auto;
+    max-width: 200px; /* Sets a maximum width for the image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Optional: adds rounded corners */
+    margin-left: 5px;
+    margin-right: 50px;
+}
+
+
+.profile-item {
+    margin-bottom: 10px;
+    white-space: nowrap; /* Prevents wrapping */
+}
+
+.project-item:not(:last-child) {
+    border-bottom: 1px solid #E5763D; /* Light gray border */
+    padding-bottom: 20px; /* Space above the border */
+    margin-bottom: 20px; /* Space below the border */
+}
+
+.project-info a {
+    color: #F2C464; /* Set link color */
+    text-decoration: underline; /* No underline */
+    padding: 0 5px; /* Space around links */
+}
+
+.project-info a:hover {
+    text-decoration: underline; /* Underline on hover for better usability */
+}
+
+/* To add buttons */
+button {
+    background-color: #403f6f; /* Bootstrap primary blue */
+    color: #F2C464;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 17px;
+}
+
+button:hover {
+    background-color: #032B44; /* Darker blue on hover */
+}
+
+details summary {
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    /* background-color: #f8f9fa; /* Light grey background */
+    margin-bottom: 5px;
+    font-size: 17px;
+}
+
+details summary:hover {
+    background-color: #403f6f; /* Slightly darker grey on hover */
+}
+
+details[open] summary {
+    border-bottom: 1px solid #dee2e6; /* A subtle line under the summary when expanded */
+}
+
+details p, details ul {
+    padding: 10px;
+    margin: 0 20px;
+    /* background-color: #f8f9fa; */
+}
+
+.project-item {
+    /* background-color: #343a40; /* Dark grey background */
+    color: #F2C464;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/* Contact Section */
+.features {
+    list-style: none; /* Removes default list styling */
+    padding: 0; /* Removes padding */
+    display: flex; /* Aligns items in a row */
+    justify-content: space-around; /* Distributes space evenly */
+}
+
+.features li {
+    padding: 10px; /* Adds some padding around items */
+}
+
+.features a {
+    /* color: #F2C464; /* Sets text and icons to yellow */
+    text-decoration: none; /* Removes underline from links */
+    font-size: 16px; /* Adjust the font size as needed */
+    display: flex; /* Ensures icon and text are aligned properly */
+    align-items: center; /* Centers items vertically */
+}
+
+.features li a .fa { /* Assuming you are using FontAwesome 5+ */
+    color: #E5763D !important;
+    margin-right: 8px; /* Space between icon and text */
+}
+
+.features a span {
+    color: #F2C464;
+    text-decoration: underline;
+}
+
+/* Skills Section */
+.skills-container {
+    width: 100%;
+    padding: 20px;
+    color: #333;
+}
+
+.skill-name {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #F2C464;
+}
+
+.skill-bar {
+    position: relative;
+    width: 95%; /* Fixed width for all bars */
+    height: 20px;
+    background-color: #d1d7e2; /* Background of the bar */
+    border-radius: 10px;
+}
+
+.skill-level {
+    height: 100%;
+    background-color: #404f6f; /* Color of the skill level */
+    border-radius: 10px;
+}
+
+.skill-pointer {
+    width: 30px; /* Width of the circle */
+    height: 30px; /* Height of the circle */
+    border-radius: 50%; /* Makes it circular */
+    /* background-color: #F2C464; /* Color of the pointer */
+    /* To make the pointer like starry night */
+    background: radial-gradient(circle, #FFD700 40%, #FFA500 70%, #FF8C00 100%);  /* Gradient to simulate glow */
+    box-shadow: 0 0 4px 1px #FFD700;  /* Outer glow */
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%); /* Center it properly on the bar */
+    z-index: 2;
+    /* To show the percentage */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center; /* Centers the text horizontally */
+}
+
+.skill-pointer span {
+    color: black; /* Ensures the text is visible against the pointer */
+    font-size: 12px; /* Small enough to fit inside the pointer */
+    font-weight: bold; /* Emphasizes the text */
+}
+
+/* To make the pointer like starry night */
+.skill-pointer::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 50px;
+    height: 50px;
+    background: radial-gradient(circle, transparent, transparent 70%, rgba(255, 239, 0, 0.5) 100%);
+    z-index: -1;
+    border-radius: 50%;
+    transform: rotateZ(-30deg);
+}
+
+
+.icon {
+    margin-right: 10px;
+    color: #333; /* Icon color */
+    font-size: 20px; /* Adjust size as needed */
+}
+
+.text {
+    color: #F2C464; /* Text color */
+    font-size: 16px; /* Adjust size as needed */
+}
+
+
+footer {
+    text-align: center;
+    font-size: smaller;
+}
