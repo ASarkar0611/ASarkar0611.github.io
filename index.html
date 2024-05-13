@@ -87,8 +87,8 @@
             <div class="skill">
                 <div class="skill-name">Tableau</div>
                 <div class="skill-bar">
-                    <div class="skill-level" style="width: 62%;"></div>
-                    <div class="skill-pointer" style="left: 62%;"><span>62%</span></div>
+                    <div class="skill-level" style="width: 70%;"></div>
+                    <div class="skill-pointer" style="left: 70%;"><span>70%</span></div>
                 </div>
             </div>
             <br>
@@ -129,6 +129,31 @@
     
     <section id="projects">
         <h2>Projects</h2>
+        <div class="project-item">
+            <h3>TV SHOW DATA CLEANING AND SEGMENTATION</h3>
+            <div style="display: flex; justify-content: center;"> <!-- Flex container for centering image -->
+                <img src="images/Movies and TV shows.jpg" width="800" height="500">
+            </div>
+            <br>
+            <button onclick="window.open('https://github.com/ASarkar0611/TVShow_Data_Cleaning_and_Segmentation_Python', '_blank');">GitHub</button>
+            <!-- <button onclick="window.open('https://public.tableau.com/app/profile/arunita.sarkar3768/viz/InstacartMarketBasketAnalysis_17138374508700/Dashboard1', '_blank');">Dashboard</button>          -->
+            <details>
+                <summary>Read More Details</summary>
+                <p><strong>Tools :</strong> Python - Pandas, TextBlob, Scikit-learn, Segmentation - K-Means</p>
+                <p><strong>Description:</strong> A dataset consisting of both movies and series is thoroughly cleaned to make the data more readable and then segmentation using K-means is performed along with evaluation metrics.</p>
+                <p>Key Features: <br>
+                <ul>
+                    <li>Import the necessary packages and import the file.</li>
+                    <li>Use shape() function to get the number of rows and columns of a dataset.</li>
+                    <li>Show the column names of the dataframe.</li>
+                    <li>Drop the duplicate records using drop_duplicates() function.</li>
+                    <li>Format each of the columns which felt necessary to clean. Formatting included removing unneccessary characters, handling NULL values, stripping white spaces or other characters and converting the datatypes of the column.</li>
+                    <li>Unwanted columns are dropped using drop().</li>
+                    <li>Sort the dataset by Rating and Gross amount in descending order.</li>
+                    <li>Segmentation performed using K-means with silhoette score, Calinski-Harabasz score and Davies-Bouldin score.</li>
+                </ul>
+            </details>
+        </div>
         <div class="project-item">
             <h3>INSTACART MARKET BASKET ANALYSIS</h3>
             <div style="display: flex; justify-content: center;"> <!-- Flex container for centering image -->
