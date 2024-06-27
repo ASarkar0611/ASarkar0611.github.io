@@ -11,14 +11,22 @@
 <body>
     <header>
         <h1>Arunita Sarkar</h1>
-        <p>Welcome to my portfolio!!!</p>
+        <p>MS in Information Systems - Big Data Analytics | Data Analyst | Ex-Tata Consultancy Services LTD</p>
+        <p>Atlanta, Georgia, USA</p>
     </header>
 
     <nav>
         <ul>
             <li><a href="#aboutme">About Me</a></li>
             <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
+            <li class="dropdown">
+                <a href="#projects" class="dropbtn">Projects</a>
+                <div class="dropdown-content">
+                    <a href="#tvshow">TV Show Data Cleaning</a>
+                    <a href="#instacart">Instacart Market Basket Analysis</a>
+                    <a href="#salary">Data Science Salary Trend</a>
+                </div>
+            </li>
             <li><a href="#contact">Contact</a></li>
             <!-- <li><a href="https://drive.google.com/file/d/1dzYcZjPKsQjXjCfaO5JoDQPcL-Ny2GNh/view?usp=drive_link" target="_blank">View Resume</a></li> -->
         </ul>
@@ -30,7 +38,7 @@
             <div class="profile-section">
                 <div class="profile-item">
                     <span class="icon">&#128100;</span>
-                    <span class="text">Data Analysis, Data Engineering, Data Modeling, Statistical Analysis Data Visualization</span>
+                    <span class="text">Data Analysis, Data Engineering, Data Modeling, Statistical Analysis, Data Visualization</span>
                 </div>
                 <div class="profile-item">
                     <span class="icon">&#128187;</span>
@@ -48,10 +56,10 @@
                     <span class="icon">&#128489;</span>
                     <span class="text">Bengali, Hindi, English, Spanish</span>
                 </div>
-                <div class="profile-item">
+                <!-- <div class="profile-item">
                     <span class="icon">&#128205;</span>
                     <span class="text">Atlanta, Georgia</span>
-                </div>
+                </div> -->
             </div>
             <img src="images/Aru.jpg" class="profile-image">
         </div>
@@ -129,7 +137,7 @@
     
     <section id="projects">
         <h2>Projects</h2>
-        <div class="project-item">
+        <div id="tvshow" class="project-item">
             <h3>TV SHOW DATA CLEANING AND SEGMENTATION</h3>
             <div style="display: flex; justify-content: center;"> <!-- Flex container for centering image -->
                 <img src="images/Movies and TV shows.jpg" width="800" height="500">
@@ -154,7 +162,7 @@
                 </ul>
             </details>
         </div>
-        <div class="project-item">
+        <div id="instacart" class="project-item">
             <h3>INSTACART MARKET BASKET ANALYSIS</h3>
             <div style="display: flex; justify-content: center;"> <!-- Flex container for centering image -->
                 <img src="images/Instacart Dashboard.png" width="800" height="500">
@@ -177,7 +185,7 @@
                 </ul>
             </details>
         </div>
-        <div class="project-item">
+        <div id="salary" class="project-item">
             <h3>DATA SCIENCE SALARY TREND</h3>
             <div style="display: flex; justify-content: center;"> <!-- Flex container for centering image -->
                 <img src="images/Data Science Salary.png" width="800" height="500">
