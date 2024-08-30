@@ -353,16 +353,35 @@ footer {
     .content-wrapper {
         flex-direction: column; /* Stack elements vertically on small screens */
         text-align: center;
+        padding: 10px; /* Add padding to the content-wrapper to create space around the content */
     }
 
     .profile-section {
         margin-bottom: 20px;
         text-align: center;
+        padding: 0 10px; /* Add padding to prevent text overflow */
+    }
+
+    .profile-item {
+        word-wrap: break-word; /* Ensure long words break to the next line */
+        padding: 5px 0; /* Add some vertical padding to each item */
     }
 
     .profile-image {
         max-width: 100%;
         margin: 0 auto 20px auto; /* Center the image on mobile */
+    }
+
+    /* Additional styles if necessary */
+    #aboutme {
+        padding: 15px;
+        box-sizing: border-box; /* Ensure padding is included in the width */
+    }
+
+    /* Reduce the width of the text content if needed */
+    .profile-section {
+        width: 100%; /* Allow the profile section to take full width on mobile */
+        max-width: 100%; /* Prevent overflow */
     }
 
     nav ul {
