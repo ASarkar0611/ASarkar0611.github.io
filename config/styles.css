@@ -354,17 +354,21 @@ footer {
         flex-direction: column; /* Stack elements vertically on small screens */
         text-align: center;
         padding: 10px; /* Add padding to the content-wrapper to create space around the content */
+        margin: 0; /* Remove any margin that could cause overflow */
     }
 
     .profile-section {
         margin-bottom: 20px;
         text-align: center;
-        padding: 0 10px; /* Add padding to prevent text overflow */
+        padding: 0 15px; /* Add more padding to ensure the text doesn't overflow */
+        width: 100%;
+        box-sizing: border-box; /* Ensure padding is included in the width calculation */
     }
 
     .profile-item {
         word-wrap: break-word; /* Ensure long words break to the next line */
         padding: 5px 0; /* Add some vertical padding to each item */
+        margin: 0; /* Remove any margin that might cause overflow */
     }
 
     .profile-image {
@@ -376,11 +380,8 @@ footer {
     #aboutme {
         padding: 15px;
         box-sizing: border-box; /* Ensure padding is included in the width */
-    }
-
-    /* Reduce the width of the text content if needed */
-    .profile-section {
-        width: 100%; /* Allow the profile section to take full width on mobile */
+        margin: 0 auto; /* Center the content on the page */
+        width: 100%; /* Ensure the section takes full width on mobile */
         max-width: 100%; /* Prevent overflow */
     }
 
