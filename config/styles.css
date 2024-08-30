@@ -347,3 +347,66 @@ footer {
 .dropdown:hover .dropbtn {
     background-color: #0056b3;
 }
+
+/* Responsive styling for mobile */
+@media (max-width: 768px) {
+    .content-wrapper {
+        flex-direction: column; /* Stack elements vertically on small screens */
+        text-align: center;
+    }
+
+    .profile-section {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .profile-image {
+        max-width: 100%;
+        margin: 0 auto 20px auto; /* Center the image on mobile */
+    }
+
+    nav ul {
+        display: block; /* Stack menu items vertically on mobile */
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        width: 100%;
+        margin-bottom: 10px; /* Space between menu items */
+    }
+
+    .features {
+        flex-direction: column; /* Stack contact items vertically on mobile */
+        align-items: center;
+    }
+
+    .features li {
+        margin-bottom: 10px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    p, .text {
+        font-size: 14px;
+    }
+
+    .skill-bar {
+        width: 100%; /* Full width on mobile */
+    }
+
+    .project-item img {
+        max-width: 100%; /* Ensure images do not overflow the container */
+        height: auto;
+    }
+}
